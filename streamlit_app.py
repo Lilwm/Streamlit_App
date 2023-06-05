@@ -1,3 +1,5 @@
+!pip install praw
+
 #import necessary libraries
 import pandas as pd
 import praw
