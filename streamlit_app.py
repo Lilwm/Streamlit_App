@@ -1,8 +1,4 @@
-import subprocess
-
-# Install the praw package
-subprocess.run(["pip", "install", "praw"])
-
+import install_praw
 #import necessary libraries
 import pandas as pd
 import praw
