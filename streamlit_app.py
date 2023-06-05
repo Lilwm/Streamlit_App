@@ -1,4 +1,6 @@
-pip install praw
+import pip
+
+pip.main(['install', 'praw'])
 
 #import necessary libraries
 import pandas as pd
