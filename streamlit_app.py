@@ -10,7 +10,7 @@ reddit = praw.Reddit(client_id='3A5qZJ0WqF6PZrNOqXraZA',
                      user_agent='TelecomApp')
 #function to extract subreddits
 
-
+@st.cache_data
 def get_subreddits(no_of_posts):
   # Define keywords to track
   keywords = [
@@ -84,3 +84,5 @@ st.pyplot(fig)
 
 # Display the posts in detail as a table
 st.write(df1, height=250, width=550)
+# download the df
+st.download_button('Download DataFrame', df1.to_csv())
